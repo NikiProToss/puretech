@@ -480,7 +480,7 @@
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li > a{
-		padding:10px 10px !important;
+		padding:10px 10px;
 		border:none !important;
 		font-weight:500;
 	}
@@ -551,7 +551,7 @@
 	.main-menu .navbar-collapse > .navigation > li > a,
 	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
-		padding:12px 20px 10px !important;
+		padding:12px 20px 10px;
 		line-height:22px;
 		color:#aaaaaa;
 		background:#262626;

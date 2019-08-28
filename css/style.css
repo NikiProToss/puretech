@@ -620,6 +620,17 @@ img{
 ====================================================================
 
 ***/
+.toggler {
+  display:none;
+}
+
+.toggler:checked + .menu-expand {
+  display:block!important;
+}
+
+.menu-expand.padding-left.important li a {
+  padding-left: 40px!important;
+}
 
 .main-header{
 	position:absolute;

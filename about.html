@@ -94,28 +94,29 @@
                 <nav class="main-menu">
                   <div class="navbar-header">
                     <!-- Toggle Button -->
-                    <button
+                    <label for="burger"
                       type="button"
                       class="navbar-toggle"
                       data-toggle="collapse"
                       data-target=".navbar-collapse"
-                    >
-                      <span class="icon-bar"></span>
+                    >                      <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                  </div>
+                  </label>
 
-                  <div class="navbar-collapse collapse clearfix">
+                  <input type="checkbox" class="toggler" id="burger">
+                  <div class="menu-expand navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
                       <li><a href="index.html">Home</a></li>
                       <li class="current"><a href="about.html">About Us</a></li>
                       <li class="dropdown">
                         <a href="services.html">Services</a>
-                        <ul>
+                        <input type="checkbox" class="toggler" id="serv-drop">
+                        <ul class="menu-expand padding-left important">
                           <li>
                             <a href="mechanical-engineering.html"
-                              >Mechanical Engineering</a
+                              >  Mechanical Engineering</a
                             >
                           </li>
                           <li>
@@ -138,6 +139,7 @@
                             <a href="power-energy.html">Power & Energy</a>
                           </li>
                         </ul>
+                        <label for="serv-drop" class="dropdown-btn"><span class="fa fa-angle-down"></span></label>
                       </li>
 
                       <li><a href="contact.html">Contact us</a></li>
