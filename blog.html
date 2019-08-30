@@ -1,0 +1,200 @@
+---
+layout: page
+title: Blog
+permalink: /blog
+---
+<!--Page Title-->
+<section
+  class="page-title"
+  style="background-image:url(/assets/images/background/4.jpg);"
+>
+  <div class="auto-container">
+    <h1>Blog</h1>
+  </div>
+</section>
+<!--End Page Title-->
+
+<!--Page Info-->
+<div class="page-info">
+  <div class="auto-container">
+    <div class="inner-container clearfix">
+      <ul class="bread-crumb pull-left">
+        <li><a href="index.html">Home</a></li>
+        <li>Blog</li>
+      </ul>
+      <div class="text pull-right">Certified Company ISO 9001-2008</div>
+    </div>
+  </div>
+</div>
+<!--End Page Info-->
+
+<!--Sidebar Page Container-->
+<div class="sidebar-page-container">
+  <div class="auto-container">
+    <div class="row clearfix">
+      <!--Content Side / Our Blog-->
+      <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+        <div class="blog-classic padding-right">
+          <!--Large Image Posts-->
+          <div class="large-image-posts">
+            <!--News Block Three-->
+            {% for post in site.posts %}
+            <div class="news-block-three">
+              <div class="inner-box">
+                <div class="image">
+                  <a href="{{ post.url }}"
+                    ><img src="/assets/images/resource/news-3.jpg" alt=""
+                  /></a>
+                </div>
+                <div class="lower-content">
+                  <div class="upper-box clearfix">
+                    <div class="posted-date pull-left">25 Feb. 2019</div>
+                    <ul class="post-meta pull-right">
+                      <li>By : Admin</li>
+                      <li>industrial, mechanical</li>
+                      <li>Comments: 7</li>
+                    </ul>
+                  </div>
+                  <div class="lower-box">
+                    <h3>
+                      <a href="{{ post.url }}"
+                        >{{ post.title }}</a
+                      >
+                    </h3>
+                    <div class="text">
+                        {{ post.excerpt }}
+                    </div>
+                    <a href="{{ post.url }}" class="theme-btn btn-style-four"
+                      >Read more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <!--Styled Pagination-->
+          <ul class="styled-pagination">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li>
+              <a href="#"><span class="fa fa-angle-right"></span></a>
+            </li>
+          </ul>
+          <!--End Styled Pagination-->
+        </div>
+      </div>
+
+      <!--Sidebar Side-->
+      <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        <aside class="sidebar">
+          <!-- Search -->
+          <div class="sidebar-widget search-box">
+            <form method="post" action="contact.html">
+              <div class="form-group">
+                <input
+                  type="search"
+                  name="search-field"
+                  value=""
+                  placeholder="Enter Search Keywords"
+                  required
+                />
+                <button type="submit">
+                  <span class="icon fa fa-search"></span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!--Blog Category Widget-->
+          <div class="sidebar-widget sidebar-blog-category">
+            <div class="sidebar-title">
+              <h2>Categories</h2>
+            </div>
+            <ul class="cat-list">
+              <li><a href="#">Chemical Process</a></li>
+              <li><a href="#">Mechanical</a></li>
+              <li><a href="#">Constuction</a></li>
+              <li><a href="#">Manufacturing</a></li>
+              <li><a href="#">Alternate Energy</a></li>
+              <li><a href="#">Technology</a></li>
+            </ul>
+          </div>
+
+          <!-- Popular Posts -->
+          <div class="sidebar-widget popular-posts">
+            <div class="sidebar-title"><h2>Recent news</h2></div>
+
+            <article class="post">
+              <figure class="post-thumb">
+                <a href="blog-detail.html"
+                  ><img src="/assets/images/resource/post-thumb-1.jpg" alt=""
+                /></a>
+              </figure>
+              <div class="text">
+                <a href="blog-detail.html"
+                  >User generated content in real-time will have ...</a
+                >
+              </div>
+              <div class="post-info">20 Feb. 2019</div>
+            </article>
+
+            <article class="post">
+              <figure class="post-thumb">
+                <a href="blog-detail.html"
+                  ><img src="/assets/images/resource/post-thumb-2.jpg" alt=""
+                /></a>
+              </figure>
+              <div class="text">
+                <a href="blog-detail.html"
+                  >Override the digital divide with additional...</a
+                >
+              </div>
+              <div class="post-info">20 Feb. 2019</div>
+            </article>
+
+            <article class="post">
+              <figure class="post-thumb">
+                <a href="blog-detail.html"
+                  ><img src="/assets/images/resource/post-thumb-3.jpg" alt=""
+                /></a>
+              </figure>
+              <div class="text">
+                <a href="blog-detail.html"
+                  >Nanotechnology inn aersion along the info…</a
+                >
+              </div>
+              <div class="post-info">20 Feb. 2019</div>
+            </article>
+
+            <article class="post">
+              <figure class="post-thumb">
+                <a href="blog-detail.html"
+                  ><img src="/assets/images/resource/post-thumb-4.jpg" alt=""
+                /></a>
+              </figure>
+              <div class="text">
+                <a href="blog-detail.html"
+                  >Focusing solely on the Fottom line loop....</a
+                >
+              </div>
+              <div class="post-info">20 Feb. 2019</div>
+            </article>
+          </div>
+
+          <!-- Popular Tags -->
+          <div class="sidebar-widget popular-tags">
+            <div class="sidebar-title"><h2>Tages</h2></div>
+            <a href="#">Industrial</a>
+            <a href="#">Analysis</a>
+            <a href="#">Project</a>
+            <a href="#">Manufactring</a>
+            <a href="#">Metal</a>
+            <a href="#">Marketing</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Sidebar Page Container-->
