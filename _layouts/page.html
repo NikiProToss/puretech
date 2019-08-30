@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Main Header-->
+      {% include header.html %}
+      <!--End Main Header -->
+      {{content}}
+      <!--Main Footer-->
+      {% include footer.html %}
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+      <span class="icon fa fa-angle-double-up"></span>
+    </div>
+  </body>
+</html>

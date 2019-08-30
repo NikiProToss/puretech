@@ -1,0 +1,12 @@
+- name: Mechanical Engineering
+  link: /services/mechanical-engineering
+- name: Agricultural Processing
+  link: /services/agricultural-processing
+- name: Petrolium & Gas
+  link: /services/petrolium
+- name: Material Engineering
+  link: /services/material-engineering
+- name: Chemical Engineering
+  link: /services/chemical-engineering
+- name: Power & Energy
+  link: /services/power-energy

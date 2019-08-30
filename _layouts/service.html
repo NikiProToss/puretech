@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Main Header-->
+      {% include header.html %}
+      <!--End Main Header -->
+
+      <!--Page Title-->
+      <section
+        class="page-title"
+        style="background-image:url(/assets/images/background/4.jpg);"
+      >
+        <div class="auto-container">
+          <h1>{{page.title}}</h1>
+        </div>
+      </section>
+      <!--End Page Title-->
+
+      <!--Page Info-->
+      <div class="page-info">
+        <div class="auto-container">
+          <div class="inner-container clearfix">
+            <ul class="bread-crumb pull-left">
+              <li><a href="index.html">Home</a></li>
+              <li>{{page.title}}</li>
+            </ul>
+            <div class="text pull-right">Certified Company ISO 9001-2008</div>
+          </div>
+        </div>
+      </div>
+      <!--End Page Info-->
+
+      <!--Sidebar Page Container-->
+      <div class="sidebar-page-container">
+        <div class="auto-container">
+          <div class="row clearfix">
+            <!--Content Side-->
+            {{ content }}
+
+            <!--Sidebar Side-->
+            <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+              <aside class="sidebar">
+                <!--Blog Category Widget-->
+                <div class="sidebar-widget sidebar-blog-category">
+                    <ul class="blog-cat">
+                        {% for item in site.data.service-menu %}
+                        <li  {% if page.url == item.link  %} class="active" {% endif %}>
+                          <a 
+                          href="{{item.link}}" 
+                          
+                         
+                          >
+                            {{item.name}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <!--Brochure-->
+                <div class="sidebar-widget brochure-widget">
+                  <div class="brochure-box">
+                    <div class="inner">
+                      <span class="icon fa fa-file-pdf-o"></span>
+                      <div class="text">PDF. Download</div>
+                    </div>
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+
+                  <div class="brochure-box">
+                    <div class="inner">
+                      <span class="icon flaticon-file"></span>
+                      <div class="text">DOC. Download</div>
+                    </div>
+                    <a href="#" class="overlay-link"></a>
+                  </div>
+                </div>
+
+                <!--Contact Widhet-->
+                <div class="sidebar-widget contact-info-widget">
+                  <div class="sidebar-title style-two">
+                    <h2>Our Brochures</h2>
+                  </div>
+                  <div class="inner-box">
+                    <ul>
+                      <li>
+                        <span class="icon fa fa-phone"></span>1800 456 7890
+                      </li>
+                      <li>
+                        <span class="icon fa fa-send"></span>info@nortech.co.in
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Main Footer-->
+      {% include footer.html %}
+    </div>
+    <!--End pagewrapper-->
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+      <span class="icon fa fa-angle-double-up"></span>
+    </div>
+  </body>
+</html>
