@@ -76,31 +76,39 @@
                             <nav class="main-menu">
                                 <div class="navbar-header">
                                     <!-- Toggle Button -->    	
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
+                                    <label for="burger"
+                      type="button"
+                      class="navbar-toggle"
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse"
+                    >
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </label>
                                 </div>
                                 
-                                <div class="navbar-collapse collapse clearfix">
+                                <input type="checkbox" class="toggler" id="burger">
+                                <div class="menu-expand navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
                                         <li><a href="index.html">Home</a>
                                             
                                         </li>
-                                        <li><a href="about.html">About Us</a>
+                                        <li><a href="about">About Us</a>
                                             
                                         </li>
                                         <li class="current dropdown"><a href="#">Services</a>
-                                            <ul>
-                                                <li><a href="power-energy.html">Power & Energy</a></li>
+                                            <input type="checkbox" class="toggler" id="serv-drop">
+                                            <ul class="menu-expand padding-left important">
+                                                 
                                                 <li><a href="mechanical-engineering.html">Mechanical Engineering</a></li>
                                                 <li><a href="agricultural-processing.html">Agricultural Processing</a></li>
                                                 <li><a href="petrolium.html">Petrolium & Gas</a></li>
                                                 <li><a href="material-engineering.html">Material Engineering</a></li>
                                                 <li><a href="chemical-engineering.html">Chemical Engineering</a></li>
-                                                
+                                                <li><a href="power-energy.html">Power & Energy</a></li>
                                             </ul>
+                                            <label for="serv-drop" class="dropdown-btn"><span class="fa fa-angle-down"></span></label>
                                         </li>
                                        
                                         <li><a href="contact.html">Contact us</a></li>
