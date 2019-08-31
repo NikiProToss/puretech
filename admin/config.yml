@@ -2,9 +2,13 @@
 
 backend:
   name: git-gateway
+  accept_roles: #optional - accepts all users if left out
+    - admin
+    - editor
   repo: NikiProToss/puretech
   branch: jekyll-blog
   site_domain: serene-austin-4e360d.netlify.com
+  
 media_folder: 'assets/uploads'
 collections:
   - name: 'blog'
