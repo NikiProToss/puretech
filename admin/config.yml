@@ -2,6 +2,7 @@
 
 backend:
   name: git-gateway
+  repo: NikiProToss/puretech
   branch: jekyll-blog
 media_folder: 'assets/uploads'
 collections:
